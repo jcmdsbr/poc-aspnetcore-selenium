@@ -13,6 +13,7 @@ C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\bin\Debug\W
 C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\bin\Debug\WebDriver.Support.xml
 C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\bin\Debug\Microsoft.Expression.Encoder.Utilities.xml
 C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\bin\Debug\Microsoft.Expression.Encoder.Types.xml
+C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\obj\Debug\SeleniumWebDriverTest.csprojResolveAssemblyReference.cache
 C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\obj\Debug\SeleniumWebDriverTest.csproj.CoreCompileInputs.cache
 C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\obj\Debug\SeleniumWebDriverTest.dll
 C:\Users\Ref_J\Source\Repos\selenium-webDriver\SeleniumWebDriverTest\obj\Debug\SeleniumWebDriverTest.pdb
