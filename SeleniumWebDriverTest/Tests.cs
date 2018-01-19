@@ -1,15 +1,44 @@
 ﻿using System.Threading;
+using Microsoft.Expression.Encoder.ScreenCapture;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using Microsoft.Expression.Encoder.ScreenCapture;
 
 namespace SeleniumWebDriverTest
 {
     [TestFixture]
     public class Tests
     {
+        [Test]
+        public void DropDownSwitchTest()
+        {
+            const string url = "http://automationpractice.com/index.php?id_category=5&controller=category#/";
+
+            var scj = new ScreenCaptureJob();
+            var chrome = new ChromeDriver();
+
+            // config ScreenCaptureJob
+            scj.OutputScreenCaptureFileName = @"c:\Temp\Selenium\Recording\DropDownTest.wmv";
+            scj.Start(); //  starting recording
+            chrome.Manage().Window.Maximize();
+
+            chrome.Navigate().GoToUrl(url);
+
+            var dropDownElement = new SelectElement(chrome.FindElement(By.Id("selectProductSort")));
+            var dropDownOptions = dropDownElement.Options;
+
+            foreach (var option in dropDownOptions)
+            {
+                option.Click();
+                chrome.WaitForAjax();
+            }
+
+            Thread.Sleep(1500);
+            scj.Stop();
+            chrome.Close();
+        }
+
         [Test]
         public void NavegateToGoogleSiteSearchAndPrint()
         {
@@ -81,35 +110,6 @@ namespace SeleniumWebDriverTest
             Thread.Sleep(2000);
             scj.Stop();
             chromeDriver.Close();
-        }
-
-        [Test]
-        public void DropDownSwitchTest()
-        {
-            const string url = "http://automationpractice.com/index.php?id_category=5&controller=category#/";
-
-            var scj = new ScreenCaptureJob();
-            var chrome = new ChromeDriver();
-
-            // config ScreenCaptureJob
-            scj.OutputScreenCaptureFileName = @"c:\Temp\Selenium\Recording\DropDownTest.wmv";
-            scj.Start(); //  starting recording
-            chrome.Manage().Window.Maximize();
-
-            chrome.Navigate().GoToUrl(url);
-
-            var dropDownElement = new SelectElement(chrome.FindElement(By.Id("selectProductSort")));
-            var dropDownOptions = dropDownElement.Options;
-
-            foreach (var option in dropDownOptions)
-            {
-                option.Click();
-                chrome.WaitForAjax(10);
-            }
-
-            Thread.Sleep(1500);
-            scj.Stop();
-            chrome.Close();
         }
     }
 }
