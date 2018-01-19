@@ -1,7 +1,7 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
+/SeleniumWebDriverTest.csproj.user
 /SeleniumWebDriverTest.sln.DotSettings.user
 /.vs
 /SeleniumWebDriverTest/obj/Debug/build.force
