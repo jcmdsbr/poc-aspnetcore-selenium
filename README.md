@@ -1,4 +1,4 @@
-# Selenium Automation Tests in C#
+# Selenium Automation Tests in C#  :sunglasses:
 
 - Projeto demonstrando como preparar e realizar testes automatizador
 
