@@ -1,14 +1,13 @@
-# Pré requistos
-* Para que o projeto funcione corretamente é necessário instalar o Microsoft Expression Encoder  4 em sua máquina e adicionar a dll no projeto... 
-Qualquer dúvida acesse : http://roadtoautomation.blogspot.com.br/2013/07/road-to-screen-recording-in-webdriver.html
+# Selenium Automation Tests in C#
 
+- Projeto demonstrando como preparar e realizar testes automatizador
 
-# Projeto
-* o Projeto foi desenvolvido em rider(-v 2017)/visual studio (-v 20170) utilizando nUnit e Selenium WebDriver
+## Estrelinha! :star:
 
-# Instalação
-  *  NUnit
-  *  Selenium.WebDriver
-  *  Selenium.Support
-  *  Selenium.WebDriver.ChromeDriver
+Se esse projeto te ajudou em alguma coisa, taquele pau na estrelinha \o/
 
+## Para rodar esse projeto, você vai precisar das seguintes ferramentas :exclamation:
+
+- Visual Studio 2019, Visual Studio Code or Rider
+- .Net Core 5.X +
+- Para que o projeto funcione corretamente é necessário instalar o Microsoft Expression Encoder  4 em sua máquina e adicionar a dll no projeto.
